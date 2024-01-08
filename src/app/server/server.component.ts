@@ -9,5 +9,10 @@ import { Component } from "@angular/core";
 )
 
 export class ServerComponent{
-
+    name: string = 'Server';
+    id: number = 3;
+    serverStatus: string = 'offline';
+    getServerStatus(){
+        return this.serverStatus;
+    }
 }
