@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'grt-first-app';
+  title = 'Assignment 2 Data binding';  
+  username = '';
+  msg: string = '';
+  onSubmitUsername(){
+    this.msg = 'User ' + this.username + ' registered successfully.';
+    this.username = '';
+  }
+
+
 }
